@@ -1,5 +1,5 @@
 const API_KEY = "644f6ce0ca9e401ebb891832211707";
-const POSITION = "Namangan";
+const POSITION = "Andijan";
 
 (function () {
   axios
