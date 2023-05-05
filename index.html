@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Application</title>
+  <link rel="stylesheet" href="./style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="main_info">
+      <div class="info_text">
+        <div class="position">
+          <i class="fas fa-location-dot"></i>
+          <h2 id="position"></h2>
+        </div>
+        <p id="general_location"></p>
+
+        <div class="temperature">
+          <i class="fa-solid fa-temperature-high"></i>
+          <p id="temp"></p>
+        </div>
+        <div class="status">
+          <img id="icon" src="" alt="" />
+          <p id="condition">Light Rain</p>
+        </div>
+        <div class="date">
+          <i class="fa-solid fa-calendar-days"></i>
+          <p id="date">2022-04-13 16:58</p>
+        </div>
+      </div>
+
+      <div class="info_search">
+        <div class="search_wrapper">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search city or country" id="search" />
+          <i class="fas fa-times" id="clear"></i>
+        </div>
+
+        <div class="map">
+          <iframe src="./map.html" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="forecast" class="days"></div>
+
+    <div id="container"></div>
+
+
+  </div>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
